@@ -15,10 +15,10 @@ def juego():
 	while True:
 		rangy = input("vale, cuantas filas quieres?: ")
 		rangx = input("ahora, cuantas columnas quieres?: ")
-		if rangy.isdigit() and rangx.isdigit() and int(rangy) >= 2 and int(rangy)<=500 and int(rangx)>=2 and int(rangx)<=500:
+		if rangy.isdigit() and rangx.isdigit() and int(rangy) >= 2 and int(rangy)<=100 and int(rangx)>=2 and int(rangx)<=100:
 			break
 		else:
-			print("sorry el rango es de (filas y columnas) mayores o iguales a 2 y menores o iguales a 500, ademas que tienen que ser numeros enteros.")
+			print("sorry el rango es de (filas y columnas) mayores o iguales a 2 y menores o iguales a 100, ademas que tienen que ser numeros enteros.")
 			print("intentemoslo otra vez\n")
 	print("\nvale,\n\naqui esta el tablero:\n")
 	board = [["#" for j in range(0,int(rangx))] for i in range(0,int(rangy))]
